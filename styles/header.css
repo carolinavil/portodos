@@ -1,0 +1,33 @@
+:root{
+    --azul-claro: #00A1FC;
+    --azul-escuro: 0046C0;
+    --branco: #f6f6f6;
+}
+
+
+.menu-mobile{
+    padding-left: 8px;
+    background-color: #1b1b1b!important;
+}
+.icone-menu{
+color: var(--branco);
+}
+
+.menu-fechado{
+    display: flex;
+}
+
+.logo-header-mobile {
+    width: 33%;
+}
+
+.sidenav{
+    margin-top: 56px!important;
+}
+
+.rotas-links {
+    background: #f9f9f9;
+    margin: 1em;
+    font-size: 16px!important;
+    border-radius: 1em;
+}

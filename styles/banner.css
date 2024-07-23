@@ -1,0 +1,52 @@
+:root{
+    --azul-claro: #00A1FC;
+    --azul-escuro: 0046C0;
+    --branco: #f6f6f6;
+    --banner-height: calc(var(--banner-width) * 9 / 16);
+}
+
+
+.banner {
+    flex-flow: column;
+    justify-content: start;
+    display: flex;
+
+    background-image: url(../assets/img/back-mobile3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: var(--banner-height);
+    background-position-y: -48px;
+    min-height: 78vh;
+    background-position-x: center;
+}
+
+h1.titulo-banner {
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+    color: var(--branco);
+    margin: 0;
+}
+
+.texto-banner {
+    padding-top: 6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+h3.subtitulo-banner {
+    font-size: 19px;
+    margin: 8px 0 0 0;
+}
+
+.pessoas-icones {
+    width: 28%;
+    margin-top: 0.9em;
+
+}
+
+h1.titulo.titulo-numeros {
+    text-align: end;
+}

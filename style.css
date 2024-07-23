@@ -1,0 +1,25 @@
+@import url('./styles/header.css');
+@import url('./styles/banner.css');
+@import url('./styles/numeros.css');
+
+:root{
+    --azul-claro: #00A1FC;
+    --azul-escuro: 0046C0;
+    --branco: #f6f6f6;
+    --banner-height: calc(var(--banner-width) * 9 / 16);
+}
+
+
+*{
+    margin: 0;
+    padding: 0
+}
+
+.titulo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.enfase-texto{
+    color:var(--azul-claro) ;
+}
