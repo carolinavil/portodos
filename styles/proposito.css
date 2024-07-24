@@ -14,19 +14,19 @@ p.texto-proposito {
 }
 
 .imagem-proposito{
-    background-color: red;
+   background-size: cover;
     min-height: 150px;
     border-radius: 22px;
    
 }
 
 .primeira-imagem-proposito{
-    background-color: yellow;
+    background-image: url(/assets/img/cadeiranteC.png);
   width: 60%;
   margin-right: 1em !important;
 }
 .segunda-imagem-proposito{
-    background-color: yellow;
+    background-image: url(/assets/img/muculmanaC.png);
   width: 40%;
 }
 
@@ -35,5 +35,6 @@ p.texto-proposito {
 }
 
 .terceira-imagem-proposito.imagem-proposito {
+    background-image: url(/assets/img/lgbtC.png);
     margin-top: 1em;
 }

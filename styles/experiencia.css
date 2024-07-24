@@ -5,13 +5,21 @@
     --banner-height: calc(var(--banner-width) * 9 / 16);
 }
 
+.experiencias{
+    margin-bottom: 3em!important;
+}
+
+
 img.icone-testemunhas {
     width: 22%;
 }
 
 .caixa-experiencia{
-    height: 30px;
-    background-color: red;
+    min-height: 250px;
+    border-radius: 14px;
+   /* opacity: 100%!important; */
+   background-size: cover;
+   background-position: center;
 }
 
 .carousel-container {
@@ -39,3 +47,67 @@ img.icone-testemunhas {
     right: 10px;
 }
 
+.experiencia1{
+    background-image: url(/assets/img/imagemtrans5.png);
+}
+
+.experiencia2{
+    background-image: url(/assets/img/imagemparalisia4.png);
+}
+
+.experiencia3{
+    background-image: url(/assets/img/imagemimigrante4.png);
+   
+}
+
+
+.carousel .carousel-item {
+    visibility: hidden;
+    width: 250px!important;
+    height: 250px!important;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+a.carousel-item {
+    opacity: 100%!important;
+}
+
+
+.descricao-experiencia {
+    width: 100.2%;
+    background-color: #c1c1c1a3;
+    backdrop-filter: blur(1px);
+    /* margin: 0; */
+    position: absolute;
+    bottom: 0;
+    border-radius: 0 0 14px 14px;
+    padding: 0.7em 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+i.material-icons.icone-experiencia {
+    background: white;
+    border-radius: 100px;
+    color: #818181;
+    padding: 4px;
+    font-size: 19px;
+}
+
+h4.titulo-experiencia {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.subtitulo-experiencia{
+    font-size: 16px;
+}
+
+.subtitulo-experiencia, h4.titulo-experiencia{
+    margin: 0;
+    color: white;
+}

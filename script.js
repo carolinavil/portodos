@@ -14,7 +14,9 @@ document.addEventListener('DOMContentLoaded', function() {
   var elems = document.querySelectorAll('.carousel');
   var instances = M.Carousel.init(elems, {
      
-      indicators: true
+      indicators: false,
+      padding: -250,
+      opacity: false,
   });
 
   // Obtém a instância do carousel

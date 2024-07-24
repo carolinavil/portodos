@@ -8,7 +8,7 @@
 
 section.slides-testemunhas {
     background: #E7E7E7;
-    padding: 4em 0 7em 0;
+    padding: 2.5em 0 3em 0;
 }
 
 /* .slides {
@@ -23,17 +23,18 @@ section.slides-testemunhas {
 }
 
 .slick-arrows-container {
+    /* width: 100%; */
+    display: flex!important;
+    justify-content: flex-end;
+    padding-right: 3em;
     cursor: pointer;
     position: absolute;
     bottom: 0;
+    right: 0;
     top: auto;
     transform: translateY(-50%);
     z-index: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-content: end;
-    display: flex;
+ 
     /* right: 1.5em; */
 }
 img.icone-testemunhas {
@@ -145,6 +146,29 @@ button.slick-next2.slick-arrow{
     background-color: var(--azul-escuro);
 }
 
+.carousel-prev, .carousel-next {
+    position: absolute;
+    top: 50%;
+    
+    border: none;
+    border-radius: 47px;
+    color: white;
+    font-size: 5px!important;
+    padding: 7px;
+    cursor: pointer;
+    z-index: 1;
+    transform: translateY(-50%);
+}
+
+.carousel-prev{
+    background: var(--azul-escuro)!important;
+}
+
+
+
+.carousel-next{
+    background: var(--azul-claro)!important;
+}
 
 /* 
 breakpoints */

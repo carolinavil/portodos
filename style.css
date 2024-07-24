@@ -4,6 +4,8 @@
 @import url('./styles/slides.css');
 @import url('./styles/experiencia.css');
 @import url('./styles/proposito.css');
+@import url('./styles/contato.css');
+@import url('./styles/footer.css');
 :root{
     --azul-claro: #00A1FC;
     --azul-escuro: #0046C0;
@@ -22,6 +24,17 @@
     margin-bottom: 5em!important;
 
 }
+
+.container-conteudo{
+    margin-left: 2em; 
+    margin-bottom: 2em!important;
+}
+
+h1.titulo-experiencia {
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 3em;
+}
 .subtitulo {
     font-weight: 500;
     font-size: 20px;
@@ -34,6 +47,7 @@ p.texto{
 
 
 .titulo {
+    text-align: center;
     font-size: 28px;
     font-weight: 700;
     margin-bottom: 2em;
