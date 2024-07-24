@@ -72,3 +72,37 @@ p.descricao-numeros {
     align-items: start;
     justify-content: center;
 }
+
+@media screen and (min-width:1024px){
+    
+    h1.titulo.titulo-numeros {
+        font-size: 59px;
+        width: 90%;
+        /* text-align: end; */
+    }
+
+    .texto-numeros{
+        display: flex;
+        justify-content: end;
+    }
+
+   .lista-numeros {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .caixas-numeros {
+        border-radius: 20px;
+        padding: 1em 1em;
+        display: flex;
+        flex-flow: column;
+        color: white;
+        margin: 2em 1.5em;
+        max-width: 400px;
+        height: 200px;
+        justify-content: space-between;
+    }
+
+    
+}
