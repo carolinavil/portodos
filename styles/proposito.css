@@ -1,0 +1,39 @@
+:root{
+    --azul-claro: #00A1FC;
+    --azul-escuro: 0046C0;
+    --branco: #f6f6f6;
+    --banner-height: calc(var(--banner-width) * 9 / 16);
+}
+
+.caixa-proposito{
+    margin: 3em 0;
+}
+p.texto-proposito {
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.imagem-proposito{
+    background-color: red;
+    min-height: 150px;
+    border-radius: 22px;
+   
+}
+
+.primeira-imagem-proposito{
+    background-color: yellow;
+  width: 60%;
+  margin-right: 1em !important;
+}
+.segunda-imagem-proposito{
+    background-color: yellow;
+  width: 40%;
+}
+
+.caixa-conjunto-imagem-proposito{
+    display: flex;
+}
+
+.terceira-imagem-proposito.imagem-proposito {
+    margin-top: 1em;
+}

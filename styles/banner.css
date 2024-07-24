@@ -11,7 +11,7 @@
     justify-content: start;
     display: flex;
 
-    background-image: url(../assets/img/back-mobile3.png);
+    background-image: url(../assets/img/back-mobile4.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: var(--banner-height);
@@ -50,3 +50,5 @@ h3.subtitulo-banner {
 h1.titulo.titulo-numeros {
     text-align: end;
 }
+
+

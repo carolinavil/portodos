@@ -1,0 +1,41 @@
+:root{
+    --azul-claro: #00A1FC;
+    --azul-escuro: 0046C0;
+    --branco: #f6f6f6;
+    --banner-height: calc(var(--banner-width) * 9 / 16);
+}
+
+img.icone-testemunhas {
+    width: 22%;
+}
+
+.caixa-experiencia{
+    height: 30px;
+    background-color: red;
+}
+
+.carousel-container {
+    position: relative;
+}
+
+.carousel-prev, .carousel-next {
+    position: absolute;
+    top: 50%;
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+    transform: translateY(-50%);
+}
+
+.carousel-prev {
+    left: 10px;
+}
+
+.carousel-next {
+    right: 10px;
+}
+

@@ -5,4 +5,61 @@
     --banner-height: calc(var(--banner-width) * 9 / 16);
 }
 
+.caixas-numeros {
+    border-radius: 20px;
+    padding: 1em 1em;
+    display: flex;
+    flex-flow: column;
+    color: white;
+    margin: 2em 1.5em;
+    justify-content: space-between;
+}
+.numero1{
+    background-color: var(--azul-escuro);
+}
 
+.numero2{
+    background-color: #0258ED;
+}
+.numero3{
+    background-color: var(--azul-claro);
+}
+.contain-numeros{
+    display: flex;
+    color: white;
+    justify-content: space-between;
+}
+
+i.material-icons.icone-numeros {
+    background: white;
+    padding: 0.1em;
+    border-radius: 30px;
+    color: black;
+    font-size: 38px;
+}
+p.conteudo-numeros {
+    font-weight: 500;
+    font-size: 17px;
+  
+}
+
+
+.detalhes-numeros {
+    display: flex;
+    flex-flow: column;
+    align-items: end;
+    justify-content: end;
+    text-align: end;
+    margin-top: -2.5em;
+}
+
+p.nmr-numeros {
+    font-size: 38px;
+    font-weight: 500;
+}
+
+p.descricao-numeros {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: -10px;
+}

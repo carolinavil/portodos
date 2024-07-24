@@ -1,25 +1,62 @@
 @import url('./styles/header.css');
 @import url('./styles/banner.css');
 @import url('./styles/numeros.css');
-
+@import url('./styles/slides.css');
+@import url('./styles/experiencia.css');
+@import url('./styles/proposito.css');
 :root{
     --azul-claro: #00A1FC;
-    --azul-escuro: 0046C0;
+    --azul-escuro: #0046C0;
     --branco: #f6f6f6;
     --banner-height: calc(var(--banner-width) * 9 / 16);
 }
 
-
-*{
+* {
     margin: 0;
-    padding: 0
+    padding: 0;
+
 }
+.container {
+    max-width: none !important;
+    width: 80% !important;
+    margin-bottom: 5em!important;
+
+}
+.subtitulo {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+p.texto{
+    font-size: 16px;
+    line-height: 25px;
+}
+
 
 .titulo {
     font-size: 28px;
     font-weight: 700;
+    margin-bottom: 2em;
 }
 
-.enfase-texto{
-    color:var(--azul-claro) ;
+.enfase-texto {
+    color: var(--azul-claro);
 }
+
+
+@media screen and (min-width: 1024px) {
+
+    .container {
+        max-width: none!important;
+        width: 90%!important;
+    }
+    .titulo {
+        font-size: 40px;
+        font-weight: 700;
+        margin-bottom: 1em;
+    }
+}
+
+
+
+
