@@ -170,6 +170,10 @@ button.slick-next2.slick-arrow{
     background: var(--azul-claro)!important;
 }
 
+.caixa-testemunhas {
+    max-width: 400px;
+}
+
 /* 
 breakpoints */
 
@@ -237,9 +241,46 @@ breakpoints */
     }
 }
 
+
+@media screen and (min-width: 1000px) {
+    .container-conteudo {
+        margin-left: 6em!important;
+        margin-bottom: 2em !important;
+    }
+
+    h2.titulo-testemunhas {
+        margin: 0 0 14px 0;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    p.texto-testemunhas {
+        font-size: 16px;
+    }
+
+    .dono-testemunhas {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        margin-top: 1em;
+    }
+
+    h3.nome-testemunhas {
+        font-size: 17px;
+        font-weight: 600;
+        margin: 0;
+    }
+
+    h4.cargo-testemunhas {
+        font-size: 15px;
+        margin: 6px 0 0 0;
+    }
+
+}
+/* 
 @media screen and (min-width: 1024px) {
     .slick-slide {
-        /* max-width: 222px; */
+     
         margin: 2em 2em;
       
     }   
@@ -247,15 +288,15 @@ breakpoints */
     .caixa-slides {
         padding-left: 4em;
     }
-}
+} */
 
 
-@media screen and (min-width: 1600px) {
+/* @media screen and (min-width: 1600px) {
     .caixa-slides {
         padding-left: 6em;
     }
     .slick-slide {
-        /* max-width: 222px; */
+ 
         margin: 2em 2em;
     }
 
@@ -265,7 +306,9 @@ breakpoints */
             font-weight: 500;
         }
         p.texto-testemunhas {
-            font-size: 20px;
+            
+                font-size: 18px;
+           
         }
 
         h3.nome-testemunhas {
@@ -279,4 +322,4 @@ breakpoints */
             margin: 4px 0 0 0;
         }
    
-}
+} */

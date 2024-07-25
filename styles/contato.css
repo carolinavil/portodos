@@ -1,9 +1,10 @@
-:root{
+:root {
     --azul-claro: #00A1FC;
     --azul-escuro: 0046C0;
     --branco: #f6f6f6;
     --banner-height: calc(var(--banner-width) * 9 / 16);
 }
+
 section.contatos {
     display: flex;
     flex-flow: column;
@@ -11,42 +12,86 @@ section.contatos {
     color: white;
 }
 
-.subtitulo-contato{
-    margin-top: 0!important;
+.subtitulo-contato {
+    margin-top: 0 !important;
 }
 
 
-.caixa-informacoes-contato{
+.caixa-informacoes-contato {
     background-color: var(--azul-claro);
     padding: 3em;
 }
 
-.caixa-email-contato{
+.caixa-email-contato {
     background-color: var(--azul-escuro);
     padding: 3em;
 }
 
-.texto-contato{
+
+.subtitulo-contato-email {
+    margin-top: 0 !important;
+
+}
+
+.texto-contato {
     margin-bottom: 0.5em;
     font-size: 16px;
 }
 
 .form-control {
-    background: white!important;
-    border-radius: 7px!important;
-    border: 1px solid #9C9292!important;
-    margin: 1em 0!important;
+    background: white !important;
+    border-radius: 7px !important;
+    border: 1px solid #9C9292 !important;
+    margin: 1em 0 !important;
 }
 
 textarea {
-    height:auto!important;
+    height: auto !important;
 }
 
-textarea::placeholder, input::placeholder{
+textarea::placeholder,
+input::placeholder {
     color: #9C9292;
     font-size: 15px;
+
 }
 
-textarea::placeholder,input::placeholder{
+textarea::placeholder,
+input::placeholder {
     padding: 0.5em !important;
+}
+
+
+@media screen and (min-width: 1000px) {
+    section.contatos {
+        flex-flow: row;
+    }
+
+    .caixa-email-contato {
+        width: 60%;
+        padding: 3em 7em;
+    }
+
+
+
+    .caixa-informacoes-contato {
+        width: 45%;
+        padding: 3em 7em;
+    }
+
+    .subtitulo-contato {
+        font-size: 40px !important;
+    }
+
+    .texto-contato {
+        margin-bottom: 0.5em;
+        font-size: 22px;
+    }
+
+    form.formulario-caixa-email-contato {
+        max-width: 70%;
+        /* margin: 0 11em; */
+        margin: auto;
+    }
+
 }

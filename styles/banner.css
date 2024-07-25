@@ -1,4 +1,4 @@
-:root{
+:root {
     --azul-claro: #00A1FC;
     --azul-escuro: 0046C0;
     --branco: #f6f6f6;
@@ -35,9 +35,11 @@ h1.titulo-banner {
     align-items: center;
     flex-flow: column;
 }
+
 h3.subtitulo-banner {
     font-size: 19px;
     margin: 8px 0 0 0;
+    font-weight: 500;
 }
 
 .pessoas-icones {
@@ -60,6 +62,16 @@ h1.titulo.titulo-numeros {
 }
 
 @media screen and (min-width: 500px) {
+    h3.subtitulo-banner {
+        font-size: 25px;
+        margin: 8px 0 0 0;
+        font-weight: 500;
+    }
+
+
+    h1.titulo-banner {
+        font-size: 50px;
+    }
 
     .banner {
         flex-flow: column;
@@ -68,17 +80,153 @@ h1.titulo.titulo-numeros {
         background-repeat: no-repeat;
         background-size: cover;
         height: var(--banner-height);
-       
         min-height: 90vh;
         background-position-x: center;
     }
 
-  
+
+
+}
+
+@media screen and (min-width: 700px) {
+    h1.titulo-banner {
+        font-size: 7rem;
+    }
+    h3.subtitulo-banner {
+        font-size: 35px;
+    }
    
 }
 
+@media screen and (min-width: 1000px) {
 
-@media screen and (min-width: 730px) {
+    
+
+.banner{
+    justify-content: center;
+    flex-flow: column;
+    display: flex;
+    background-image: url(../assets/img/banner-desktop4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: var(--banner-height);
+    background-position-y: -120px!important;
+    min-height: 90vh;
+    background-position-x: center;
+}
+
+    .pessoas {
+        margin-top: 2em;
+        display: flex;
+        justify-content: flex-end;
+        width: 66%;
+        flex-flow: row-reverse;
+        align-items: center;
+    }
+    .header .menu-mobile{
+        display: none;
+    }
+    h1.titulo-banner {
+        font-size: 5rem;
+    }
+
+    h3.subtitulo-banner {
+        font-size: 1.9rem;
+        margin-left: 0.5em;
+        margin-top:0;
+    }
+
+    .texto-banner {
+        padding-top: 11em;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-flow: column;
+    }
+
+    .texto-banner {
+        padding: 0;
+        position: absolute;
+        /* height: 59%; */
+        padding-left: 5em;
+        justify-content: space-between;
+    }
+
+   
+    }
+
+    @media screen and (min-width: 1300px) {
+        .banner{
+            background-position-y: -120px!important;
+        }
+        .pessoas {
+            width: 78%;
+        }
+
+        h3.subtitulo-banner {
+            font-size: 1.5rem;
+            margin-top: 1em;
+        }
+    
+    
+        .banner {
+            flex-flow: column;
+            justify-content: center;
+            display: flex;
+            background-image: url(../assets/img/banner-desktop4.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: var(--banner-height);
+            background-position-y: -120px!important;
+            min-height: 90vh;
+            background-position-x: center;
+        }
+    
+        .pessoas {
+            display: flex;
+            justify-content: flex-end;
+            width: 80%;
+            flex-flow: row-reverse;
+            align-items: center;
+        }
+    
+        .pessoas-icones {
+            width: 26%;
+            margin-top: 0em;
+        }
+    
+        h3.subtitulo-banner {
+            width: 45%;
+            margin-top: 0em;
+            text-align: start;
+        }
+
+        .texto-banner{
+            /* height: 63%; */
+          }
+        }
+
+     
+    
+
+        @media screen and (min-width: 1500px) {
+            h1.titulo-banner {
+                font-size: 6rem;
+            }
+
+        }
+
+
+
+   
+  
+
+    
+    
+
+
+
+/* @media screen and (min-width: 730px) {
 
     .banner {
         flex-flow: column;
@@ -92,96 +240,47 @@ h1.titulo.titulo-numeros {
         background-position-x: center;
     }
 
-  
-   
+
+
 }
 
 @media screen and (min-width: 830px) {
 
     .banner {
-          background-position-y: -350px;
+        background-position-y: -350px;
     }
 
-  
-   
+
+
 }
 
 @media screen and (min-width: 930px) {
 
     .banner {
-          background-position-y: -450px;
+        background-position-y: -450px;
     }
 
-  
-   
-}
-@media screen and (min-width: 1024px) {
 
-    .banner {
-        flex-flow: column;
-        justify-content: start;
-        display: flex;
-    
-        background-image: url(../assets/img/banner-desktop4.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: var(--banner-height);
-        background-position-y: -148px;
-        min-height: 90vh;
-        background-position-x: center;
-    }
 
-  
-   
-    section.banner {
-        flex-flow: row;
-        align-items: center;
-        justify-content: start;
-        padding-left: 5em;
-    }
+} */
 
+
+/* @media screen and (min-width: 1024px) {
     h1.titulo-banner {
-        font-size: 100px;
-        text-align: start;
-        /* width: 100%; */
+        font-size: 70px;
     }
-
-    .texto-banner {
-        display: flex;
-        justify-content: space-between;
-        align-items: start;
-        flex-flow: column;
-        height: 67vh;
-        padding-top: 2em;
-}
-
-    .pessoas {
-        width: 46%;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        flex-flow: row-reverse;
-    }
-
-    h3.subtitulo-banner {
-        font-size: 26px;
-        font-weight: 500;
-        margin-left: 11px;
-    }
-
-
-}
-
-@media screen and (min-width: 1224px) {
-
     
+} */
 
-  
+
+
+/* @media screen and (min-width: 1024px) {
+
     .banner {
         flex-flow: column;
         justify-content: start;
         display: flex;
-    
+
         background-image: url(../assets/img/banner-desktop4.png);
         background-repeat: no-repeat;
         background-size: cover;
@@ -190,6 +289,8 @@ h1.titulo.titulo-numeros {
         min-height: 90vh;
         background-position-x: center;
     }
+
+
 
     section.banner {
         flex-flow: row;
@@ -201,7 +302,7 @@ h1.titulo.titulo-numeros {
     h1.titulo-banner {
         font-size: 100px;
         text-align: start;
-        /* width: 100%; */
+     
     }
 
     .texto-banner {
@@ -211,7 +312,7 @@ h1.titulo.titulo-numeros {
         flex-flow: column;
         height: 67vh;
         padding-top: 2em;
-}
+    }
 
     .pessoas {
         width: 46%;
@@ -223,19 +324,84 @@ h1.titulo.titulo-numeros {
 
     h3.subtitulo-banner {
         font-size: 26px;
-        font-weight: 500;
         margin-left: 11px;
+        text-align: start;
     }
-}
 
+
+} */
+
+/* @media screen and (min-width: 1224px) {
+
+
+
+
+    .banner {
+        flex-flow: column;
+        justify-content: start;
+        display: flex;
+        position: relative;
+        background-image: url(../assets/img/banner-desktop4.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: var(--banner-height);
+        background-position-y: -148px;
+        min-height: 90vh;
+        background-position-x: center;
+    }
+
+    section.banner {
+        flex-flow: row;
+        align-items: center;
+        justify-content: start;
+        padding-left: 5em;
+    }
+
+    h1.titulo-banner {
+        font-size: 6rem;
+        text-align: start;
+      
+    }
+
+    .texto-banner {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        flex-flow: column;
+        height: 70%;
+        position: absolute;
+        padding-top: 2em;
+    }
+
+    .pessoas {
+        width: 60%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-flow: row-reverse;
+    }
+
+    .pessoas-icones {
+        width: 37%;
+        margin-top: 0.9em;
+    }
+
+    h3.subtitulo-banner {
+        font-size: 20px;
+        margin-left: 11px;
+        text-align: start;
+    }
+
+} */
+
+/* 
 @media screen and (min-width: 1500px) {
    
     .banner {
         flex-flow: column;
         justify-content: start;
         display: flex;
-/*     
-        background-image: url(../assets/img/teste3.png); */
+
         background-repeat: no-repeat;
         background-size: cover;
         height: var(--banner-height);
@@ -266,7 +432,7 @@ h1.titulo.titulo-numeros {
         height: 67vh;
     }
     .pessoas {
-        width: 46%;
+        width: 50%;
         display: flex;
         justify-content: flex-end;
         align-items: center;
@@ -278,8 +444,20 @@ h1.titulo.titulo-numeros {
         font-weight: 500;
         margin-left: 11px;
     }
-}
+} */
+
+/* @media screen and (min-width: 1500px) {
+    h1.titulo-banner {
+        font-size: 8rem;
+        text-align: start;
+     
+    }
+
+    h3.subtitulo-banner {
+
+        font-size: 27px;
+        margin-left: 11px;
 
 
-
-
+    }
+} */

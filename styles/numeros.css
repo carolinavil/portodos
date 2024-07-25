@@ -1,4 +1,4 @@
-:root{
+:root {
     --azul-claro: #00A1FC;
     --azul-escuro: 0046C0;
     --branco: #f6f6f6;
@@ -14,17 +14,20 @@
     margin: 2em 1.5em;
     justify-content: space-between;
 }
-.numero1{
+
+.numero1 {
     background-color: var(--azul-escuro);
 }
 
-.numero2{
+.numero2 {
     background-color: #0258ED;
 }
-.numero3{
+
+.numero3 {
     background-color: var(--azul-claro);
 }
-.contain-numeros{
+
+.contain-numeros {
     display: flex;
     color: white;
     justify-content: space-between;
@@ -40,10 +43,11 @@ i.material-icons.icone-numeros {
     color: #202020;
     font-size: 34px;
 }
+
 p.conteudo-numeros {
     font-weight: 500;
     font-size: 17px;
-  
+
 }
 
 
@@ -73,15 +77,55 @@ p.descricao-numeros {
     justify-content: center;
 }
 
-@media screen and (min-width:1024px){
-    
-    h1.titulo.titulo-numeros {
-        font-size: 59px;
-        width: 90%;
-        /* text-align: end; */
+@media screen and (min-width:1000px) {
+
+
+    .texto-numeros {
+        display: flex;
+        justify-content: flex-end;
     }
 
-    .texto-numeros{
+
+    h1.titulo.titulo-numeros {
+        font-size: 42px;
+        width: 90%;
+
+    }
+
+    ul.lista-numeros {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    li.caixas-numeros {
+        width: 340px;
+        height: 190px;
+        
+    }
+
+   
+    p.conteudo-numeros {
+        font-size: 22px;
+    }
+
+    i.material-icons.icone-numeros {
+        font-size: 39px;
+    }
+
+    p.nmr-numeros {
+        font-size: 55px;
+        font-weight: 600;
+    }
+
+    p.descricao-numeros {
+        font-size: 19px;
+        font-weight: 500;
+        margin-top: -14px;
+    }
+
+
+    /* .texto-numeros{
         display: flex;
         justify-content: end;
     }
@@ -102,7 +146,30 @@ p.descricao-numeros {
         max-width: 400px;
         height: 200px;
         justify-content: space-between;
+    } */
+
+    .caixas-numeros {
+        border-radius: 28px;
     }
 
+ 
+
+
+}
+
+@media screen and (min-width:1500px) {
+
+    li.caixas-numeros {
+        margin: 0 3em;
+        /* width: 320px;
+        height: 200px; */
+    }
+   
+
+    h1.titulo.titulo-numeros {
+        margin: 2em 0;
+
+    }
     
 }
+

@@ -11,12 +11,29 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Portodos</title>
 </head>
 
 <body>
 
     <header class="header">
+        <nav class="menu-desktop ">
+            <img src="/assets/img/icone-mae.svg" alt="" class="logo-header-desktop">
+            <ul class="rotas-menu-desktop">
+
+
+                <li><a href="#!" class="rotas-links">Quem somos </a></li>
+                <li><a href="#!" class="rotas-links">Nosso propósito </a>
+                </li>
+                <li><a href="#!" class="rotas-links">Nossas histórias </a>
+                </li>
+            
+
+            </ul>
+
+            <a href="#!" class="rotas-links rotas-links-contato">Fale conosco </a>
+        </nav >
         <nav class="menu-mobile">
             <ul id="slide-out" class="sidenav  rotas-menu-mobile">
 
@@ -26,7 +43,7 @@
                 </li>
                 <li><a href="#!" class="rotas-links">Nossas histórias <i class="material-icons">chevron_right</i></a>
                 </li>
-                <li><a href="#!" class="rotas-links">Fale conosco <i class="material-icons">chevron_right</i></a></li>
+                <li><a href="#!" class="rotas-links rota-fale-conosco">Fale conosco <i class="material-icons">chevron_right</i></a></li>
 
             </ul>
             <div class="menu-fechado">
@@ -38,7 +55,7 @@
 
         </nav>
     </header>
-    <section class="banner">
+    <section class="banner" >
             <div class="texto-banner">
              
                 <h1 class="titulo-banner">Um por todos,<br> todos por um.</h1>
@@ -48,10 +65,15 @@
                 </div>
             </div>
     </section>
-    <section class="numeros container">
+    <section class="numeros container" 
+    data-aos="fade-up"
+    data-aos-duration="800"
+    
+    >
         <div class="texto-numeros">
-            <h1 class="titulo titulo-numeros">Lorem ipsum dolor sit amet, <span class="enfase-texto">consectetur
-                    adipiscing elit.</span> </h1>
+            <h1 class="titulo titulo-numeros">
+                
+                Lorem ipsum dolor sit amet, consectetur consectetur, <span class="enfase-texto">adipiscing consectetur consecteturconsectetur</span>. </h1>
         </div>
         <ul class="lista-numeros">
             <li class="caixas-numeros numero1 ">
@@ -103,30 +125,55 @@
 
         </div>
     </section>
-    <section class="proposito container">
+    <section class="proposito container"  data-aos="fade-up"
+    data-aos-duration="800">
         <h1 class="titulo">Lorem ipsum dolor sit </h1>
 
         <p class="texto-proposito">Lorem ipsum dolor sit amet, consectetur consectetur, adipiscing consectetur
             consecteturconsectetur Lorem ipsum dolor sit amet, consectetur consectetur,
             adipiscing consectetur consecteturconsectetur Lorem ipsum dolor sit amet, consectetur consectetur,
+            adipiscing consectetur consecteturconsectetur.
+            rem ipsum dolor sit amet, consectetur consectetur,
+            adipiscing consectetur consecteturconsectetur Lorem ipsum dolor sit amet, consectetur consectetur,
             adipiscing consectetur consecteturconsectetur.</p>
 
 
-        <div class="caixa-proposito">
-            <div class="caixa-conjunto-imagem-proposito">
-                <div class="primeira-imagem-proposito imagem-proposito"></div>
-                <div class="segunda-imagem-proposito imagem-proposito"></div>
-            </div>
-            <div class="terceira-imagem-proposito imagem-proposito"></div>
+            <div class="container-proposito"  data-aos="fade-right"
+            data-aos-duration="900"
+            >
+                <div class="caixa-proposito caixa-proposito-mobile">
+                    <div class="caixa-conjunto-imagem-proposito">
+                        <div class="primeira-imagem-proposito imagem-proposito"></div>
+                        <div class="segunda-imagem-proposito imagem-proposito"></div>
+                    </div>
+                    <div class="terceira-imagem-proposito imagem-proposito"></div>
+                </div>
+                <div class="caixa-proposito caixa-proposito-desktop">
+                    <div class="caixa-conjunto-imagem-proposito">
+                        <div class="primeira-imagem-proposito imagem-proposito"></div>
+                        <div class="terceira-imagem-proposito imagem-proposito"></div>
+                    </div>
+                    <div class="segunda-imagem-proposito imagem-proposito"></div>
+                   
+                </div>
+        <div class="caixa-subtitulo-proposito">
+            <h3 class="subtitulo">Loremipsum </h3>
+            <p class="texto subtitulo-texto">Lorem ipsum dolor sit amet, consectetur consectetur,
+                 adipiscing consectetur consecteturconsectetur Lorem ipsum dolor sit ame consecteturconsectetur Lorem ipsum dolor sit ame
+                 consecteturconsectetur Lorem ipsum dolor sit amet, consectetur consectetur,
+                 adipiscing consectetur consecteturconsectetur.
+                 rem ipsum dolor sit amet, .</p>
         </div>
-
-        <h3 class="subtitulo">Loremipsum </h3>
-        <p class="texto">Lorem ipsum dolor sit amet, consectetur consectetur, adipiscing consectetur
-            consecteturconsectetur Lorem ipsum.</p>
+            </div>
+    
+       
     </section>
-    <section class="experiencias">
+    <section class="experiencias"  data-aos="fade-up"
+    data-aos-duration="800">
         <h1 class="titulo titulo-experiencia ">Lorem ipsum dolor sit Lorem ipsum dolor sit </h1>
-
+        <p class="texto-proposito container">Lorem ipsum dolor sit amet, consectetur consectetur, adipiscing consectetur
+            consecteturconsectetur Lorem ipsum dolor sit amet, consectetur consectetur,
+            adipiscing consectetur consecteturconsectetur Lorem ipsum dolor sit amet, </p>
         <div class="carousel-container carrossel-experiencias">
             <div class="carousel">
                 <a class="carousel-item" href="#one!">
@@ -168,11 +215,14 @@
                     </a>
             </div>
             <!-- Setas personalizadas -->
-            <button class="carousel-prev"><i class="material-icons">arrow_back</i></button>
-            <button class="carousel-next"><i class="material-icons">arrow_forward</i></button>
+             <div class="caixa-btn-experiencia">
+                <button class="carousel-prev"><i class="material-icons">arrow_back</i></button>
+                <button class="carousel-next"><i class="material-icons">arrow_forward</i></button>
+             </div>
+    
         </div>
     </section>
-    <section class="slides-testemunhas">
+    <section class="slides-testemunhas"  >
         <div class="titulo-slides container-conteudo">
             <h1 class="subtitulo">Você estará em <br> boa companhia</h1>
 
@@ -299,7 +349,7 @@
         </div>
 
         <div class="caixa-email-contato">
-            <h1 class="subtitulo subtitulo-contato">Ou, se preferir, deixe seu e-mail que nós entraremos em contato.
+            <h1 class=" subtitulo-contato-email subtitulo">Ou, se preferir, deixe seu e-mail que nós entraremos em contato.
             </h1>
 
             <form action="" class="formulario-caixa-email-contato">
@@ -334,6 +384,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
 
 </body>

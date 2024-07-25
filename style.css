@@ -6,7 +6,8 @@
 @import url('./styles/proposito.css');
 @import url('./styles/contato.css');
 @import url('./styles/footer.css');
-:root{
+
+:root {
     --azul-claro: #00A1FC;
     --azul-escuro: #0046C0;
     --branco: #f6f6f6;
@@ -18,16 +19,17 @@
     padding: 0;
 
 }
+
 .container {
     max-width: none !important;
     width: 80% !important;
-    margin-bottom: 5em!important;
+    margin-bottom: 5em !important;
 
 }
 
-.container-conteudo{
-    margin-left: 2em; 
-    margin-bottom: 2em!important;
+.container-conteudo {
+    margin-left: 2em;
+    margin-bottom: 2em !important;
 }
 
 h1.titulo-experiencia {
@@ -35,12 +37,13 @@ h1.titulo-experiencia {
     width: 80%;
     margin-top: 3em;
 }
+
 .subtitulo {
     font-weight: 500;
     font-size: 20px;
 }
 
-p.texto{
+.texto {
     font-size: 16px;
     line-height: 25px;
 }
@@ -58,7 +61,35 @@ p.texto{
 }
 
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1000px) {
+    .texto {
+        font-size: 20px;
+       
+    }
+
+    .container {
+        max-width: none !important;
+        width: 90% !important;
+    }
+
+    .titulo {
+        font-size: 40px;
+        font-weight: 700;
+        margin-bottom: 2em;
+    }
+
+    .subtitulo {
+        font-size: 25px;
+        font-weight: 700;
+    }
+
+    .container {
+        max-width: none !important;
+        width: 90% !important;
+    }
+}
+
+/* @media screen and (min-width: 1024px) {
 
     .container {
         max-width: none!important;
@@ -69,8 +100,4 @@ p.texto{
         font-weight: 700;
         margin-bottom: 1em;
     }
-}
-
-
-
-
+} */

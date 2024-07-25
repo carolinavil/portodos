@@ -5,7 +5,8 @@
 }
 
 
-.menu-mobile {    z-index: 99;
+.menu-mobile {
+    z-index: 99;
     position: fixed;
     padding-left: 8px;
     background-color: #1b1b1b !important;
@@ -35,16 +36,86 @@
 }
 
 
- .sidenav-overlay {
-    z-index: -1!important
-   
+.sidenav-overlay {
+    z-index: -1 !important
 }
 
-
-
-@media screen and (min-width: 1224px) {
-  .header{
+.menu-desktop.active {
+    transition: 0.5s;
+    background-color: #333!important;
+    color: #fff;
+    z-index: 99!important;
+    
+}
+.menu-desktop{
     display: none;
-  }
 }
 
+@media screen and (min-width: 1000px) {
+
+    /* .rotas-links-contato{
+        display: inline!important;
+        background-color: red!important;
+    } */
+
+    .header,
+    nav {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    nav.menu-desktop {
+        padding: 2em 3em!important;
+        position: fixed;
+        justify-content: space-between;
+        background-color: transparent !important;
+        box-shadow: none !important;
+        /* padding-top: 2.5em!important; */
+        display: flex;
+        
+    }
+
+
+
+    a.rotas-links {
+        background: none;
+        font-weight: 500;
+       
+    }
+
+
+    a.rotas-links:hover {
+       
+        background: none!important;
+    
+    }
+
+    a.rotas-links i {
+        display: none;
+    }
+
+    .logo-header-desktop {
+        width: 15%;
+    }
+
+    .menu-desktop {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    a.rotas-links {
+        background: none;
+        font-weight: 500;
+        font-size: 20px!important;
+      
+    }
+
+    .logo-header-desktop {
+        width: 13%;
+    }
+
+
+}
